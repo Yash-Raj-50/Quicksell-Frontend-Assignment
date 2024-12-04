@@ -1,0 +1,161 @@
+.headerContent{
+    padding-inline: 2.5vw;
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.headerDropdown{
+
+    height: 90%;
+    margin-block: auto;
+}
+
+.headerButton {
+    position: relative;
+    bottom: 5px;
+    background-color: white;
+    padding-left: 12px;
+    padding-right: 4px;
+    padding-block: 4px;
+    border-radius: 4px;
+    border: 0.5px solid gray;
+    font-weight: 600;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    min-width: 75px;
+}
+
+.dropdownDialog {
+    position: absolute;
+    background-color: #f5f7f9;
+    border: 1px solid #dfe3e8;
+    height: 10vh;
+    width: 20vw;
+    min-width: 250px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.dropdownField {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    color: gray;
+    font-size:smaller;
+    font-weight: 500;
+}
+
+.dropSelect{
+    background-color: white;
+    border: 0.5px solid gray;
+    border-radius: 4px;
+    padding-inline: 12px;
+    padding-block: 4px;
+    font-weight: 500;
+}
+
+/* Dashboard part starts */
+.dashboardContent{
+    padding-inline: 2.5vw;
+    display: flex;
+    gap: 2.5vw;
+    width: 100%;
+    height: calc(100vh - 60px);
+    overflow-x: scroll;
+}
+
+.cardColumn{
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+}
+
+.cardColumnHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vw;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cardColumnHeaderButtonGrp{
+    display: flex;
+    gap: 0.5vw;
+}
+
+.cardList{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+.card{
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5vw;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vw;
+    font-size: 16px;
+    color: #4a4a4a;
+}
+
+.cardBody{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cardFooter{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+.footerTag{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    border: 0.5px solid #4a4a4a2f;
+    border-radius: 4px;
+    padding-inline: 8px;
+    padding-block: 4px;
+    color: #4a4a4aba;
+    font-weight: 500;
+}
+
+.footerIcon{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    border: 0.5px solid #4a4a4a2f;
+    border-radius: 4px;
+    padding-inline: 8px;
+    padding-block: 4px;
+    color: #4a4a4aba;
+    font-weight: 500;
+}
