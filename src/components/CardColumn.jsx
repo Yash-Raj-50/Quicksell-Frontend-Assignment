@@ -8,7 +8,7 @@ const statusSvgs = {
     "In progress": require('../static/svgs/in-progress.svg').default,
     "Done": require('../static/svgs/Done.svg').default,
     "Closed": require('../static/svgs/Cancelled.svg').default
-}
+};
 
 const prioritySvgs = {
     0: require('../static/svgs/No-priority.svg').default,
@@ -18,7 +18,14 @@ const prioritySvgs = {
     3: require('../static/svgs/Img-High_Priority.svg').default
 }
 
-const CardColumn = ({ title, tickets, grouping, ordering }) => {
+const priorityNames = {
+    0: 'No Priority',
+    1: 'Low',
+    2: 'Medium',
+    3: 'High',
+    4: 'Urgent'
+};
+const CardColumn = ({ title, tickets = [], grouping, ordering }) => {
 
     const isUserGrouping = grouping === 'User';
     const isPriorityGrouping = grouping === 'Priority';
@@ -48,11 +55,14 @@ const CardColumn = ({ title, tickets, grouping, ordering }) => {
                             {nameAbbreviation}
                         </div>
                     ) : isPriorityGrouping ? (
-                        <img
-                            src={prioritySvgs[title]}
-                            alt={`Priority ${title}`}
-                            style={{ width: '16px', height: '16px' }}
-                        />
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <img
+                                src={prioritySvgs[title]}
+                                alt={`Priority ${title}`}
+                                style={{ width: '16px', height: '16px', marginRight: '8px' }}
+                            />
+                            <span>{priorityNames[title]}</span>
+                        </div>
                     ) : (
                         <img
                             src={statusSvgs[title]}
